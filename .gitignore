@@ -1,0 +1,6 @@
+# sublime related files
+*.sublime-project
+*.sublime-workspace
+
+# generated files
+document.pdf
