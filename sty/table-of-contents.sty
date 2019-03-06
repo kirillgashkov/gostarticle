@@ -1,0 +1,33 @@
+\RequirePackage{tocloft}
+
+
+%
+% table of contents
+%
+
+
+% toc title
+\renewcommand{\contentsname}{Оглавление}
+% toc depth
+\setcounter{tocdepth}{2}
+
+
+%
+% section
+%
+
+
+% section font
+\renewcommand{\cftsecfont}{\bfseries}
+\renewcommand{\cftsecpagefont}{\bfseries}
+% section leader
+\renewcommand{\cftsecdotsep}{\cftdot}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
+% subsection font
+\renewcommand{\cftsubsecfont}{\normalfont}
+\renewcommand{\cftsubsecpagefont}{\normalfont}
+% subsection leader
+\renewcommand{\cftsubsecdotsep}{\cftdot}
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftsecdotsep}}
+% section line spacing
+\setlength{\cftbeforesecskip}{3pt}
