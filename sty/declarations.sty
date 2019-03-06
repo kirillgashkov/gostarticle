@@ -1,0 +1,56 @@
+%
+% Variables
+%
+
+
+\def\@university{\@empty}
+\newcommand{\university}[1]{\def\@university{#1}}
+
+\def\@chair{\@empty}
+\newcommand{\chair}[1]{\def\@chair{#1}}
+
+\def\@doctype{\@empty}
+\newcommand{\doctype}[1]{\def\@doctype{#1}}
+
+\def\@variation{\@empty}
+\newcommand{\variation}[1]{\def\@variation{#1}}
+
+\def\@subject{\@empty}
+\newcommand{\subject}[1]{\def\@subject{#1}}
+
+\def\@authorgroup{\@empty}
+\newcommand{\authorgroup}[1]{\def\@authorgroup{#1}}
+
+\def\@supervisor{\@empty}
+\newcommand{\supervisor}[1]{\def\@supervisor{#1}}
+
+\def\@supervisorposition{\@empty}
+\newcommand{\supervisorposition}[1]{\def\@supervisorposition{#1}}
+
+
+%
+% Commands
+%
+
+
+\RequirePackage{graphicx}
+\RequirePackage{caption}
+
+
+\newcommand{\sectionlike}[1]{
+	\section*{\centering \MakeUppercase{#1}}
+	\addcontentsline{toc}{section}{\MakeUppercase{#1}}
+}
+
+\newcommand{\centeredgrapics}[3]{
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.75\textwidth]{{#1}}
+		\caption{#2}
+		\label{#3}
+	\end{figure}
+}
+
+\newcommand{\unit}[1]{
+	\ensuremath{\, \mathrm{#1}}
+}
