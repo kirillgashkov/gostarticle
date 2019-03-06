@@ -1,0 +1,53 @@
+% for captions setup
+\RequirePackage{caption}
+% for counters setup
+\let\counterwithout\relax
+\let\counterwithin\relax
+\RequirePackage{chngcntr}
+
+
+%
+% Figures
+%
+
+
+% figure header
+\renewcommand{\figurename}{Рис.}
+
+% counter
+\counterwithin{figure}{section}
+
+
+%
+% Tables
+%
+
+
+% ex­tra com­mands and be­hind-the-scenes op­ti­mi­za­tion
+\RequirePackage{booktabs}
+% write ta­bles that con­tinue to the next page
+\RequirePackage{longtable}
+% change cells style
+\RequirePackage{makecell}
+% extra column which width ex­pands to fill the declared en­vi­ron­ment
+\RequirePackage{tabularx}
+% add more text alignment commands
+\RequirePackage{ragged2e}
+
+
+% column heads
+\renewcommand{\theadfont}{\bfseries}
+\renewcommand{\theadalign}{tl}
+
+% cells
+\renewcommand{\arraystretch}{1.2}
+\renewcommand{\cellalign}{tl}
+
+% table header
+\renewcommand{\tablename}{Таблица}
+% counter
+\counterwithin{table}{section}
+% new column type
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+% setup caption
+\captionsetup[table]{singlelinecheck=false}
