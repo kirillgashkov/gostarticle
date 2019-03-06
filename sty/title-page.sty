@@ -1,0 +1,68 @@
+\RequirePackage{xifthen}
+
+\renewcommand*{\maketitle}{
+\makeatletter
+\begin{titlepage}
+
+	\begin{center}
+		\textbf{Министерство образования и науки Российской Федерации}
+
+		\bigskip
+
+		ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ
+		ВЫСШЕГО ОБРАЗОВАНИЯ
+
+		\bigskip
+
+		\textbf{\@university}
+
+		\bigskip
+
+		\@chair
+	\end{center}
+
+	\vfill
+
+	\begin{center}
+		\textbf{\@doctype}
+
+		\textbf{на тему}
+
+		\@title
+
+		по дисциплине
+
+		\textbf{\@subject}
+
+		\ifthenelse{\isempty{\@variation}}
+		{}
+		{\textbf{\@variation}}
+	\end{center}
+
+	\bigskip
+
+	\begin{flushright}
+		\textbf{Выполнил:}
+		
+		\ifthenelse{\isempty{\@authorgroup}}
+		{\@author}
+		{\@author,\\\@authorgroup}
+
+		\bigskip
+
+		\textbf{Проверил:}
+		
+		\ifthenelse{\isempty{\@supervisorposition}}
+		{\@supervisor}
+		{\@supervisor,\\\@supervisorposition}
+	\end{flushright}
+
+	\vfill
+
+	\begin{center}
+		Санкт-Петербруг --- \the\year
+	\end{center}
+
+\end{titlepage}
+\makeatother
+}
