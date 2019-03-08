@@ -1,3 +1,8 @@
+\RequirePackage{graphicx}
+\RequirePackage{caption}
+\RequirePackage{float}
+
+
 %
 % Variables
 %
@@ -36,17 +41,13 @@
 %
 
 
-\RequirePackage{graphicx}
-\RequirePackage{caption}
-
-
 \newcommand{\sectionlike}[1]{
 	\section*{\centering \MakeUppercase{#1}}
 	\addcontentsline{toc}{section}{\MakeUppercase{#1}}
 }
 
 \newcommand{\centeredgrapics}[3]{
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.75\textwidth]{{#1}}
 		\caption{#2}
