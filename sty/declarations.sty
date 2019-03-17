@@ -1,6 +1,7 @@
 \RequirePackage{graphicx}
 \RequirePackage{caption}
 \RequirePackage{float}
+\RequirePackage{tocloft}
 
 
 %
@@ -43,7 +44,9 @@
 
 \newcommand{\sectionlike}[1]{
 	\section*{\centering \MakeUppercase{#1}}
+	\addtocontents{toc}{\setlength{\cftsecnumwidth}{0em}}
 	\addcontentsline{toc}{section}{\MakeUppercase{#1}}
+	\addtocontents{toc}{\setlength{\cftsecnumwidth}{1.5em}}
 }
 
 \newcommand{\centeredgraphics}[3]{
