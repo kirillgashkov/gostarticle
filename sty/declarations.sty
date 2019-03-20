@@ -63,3 +63,10 @@
 	\settowidth{\hangindent}{#1}
 	\hangafter=1
 }
+
+% https://tex.stackexchange.com/questions/2441/how-to-add-a-forced-line-break-inside-a-table-cell
+\newcommand{\specialcell}[2][c]{
+	\begin{tabular}
+		[#1]{@{}c@{}}#2
+	\end{tabular}
+}
