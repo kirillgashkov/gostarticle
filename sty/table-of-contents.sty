@@ -9,7 +9,7 @@
 % toc title
 \renewcommand{\contentsname}{Оглавление}
 % toc depth
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{3}
 
 
 %
@@ -29,5 +29,12 @@
 % subsection leader
 \renewcommand{\cftsubsecdotsep}{\cftdot}
 \renewcommand{\cftsubsecleader}{\cftdotfill{\cftsecdotsep}}
+% subsubsection font
+\renewcommand{\cftsubsubsecfont}{\normalfont}
+\renewcommand{\cftsubsubsecpagefont}{\normalfont}
+% subsubsection leader
+\renewcommand{\cftsubsubsecdotsep}{\cftdot}
+\renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftsecdotsep}}
+
 % section line spacing
 \setlength{\cftbeforesecskip}{3pt}
