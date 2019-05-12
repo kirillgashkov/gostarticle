@@ -18,3 +18,5 @@
 \subimport{./sty/}{table-of-contents.sty}
 \subimport{./sty/}{bibliography.sty}
 \subimport{./sty/}{figures.sty}
+
+\subimport{./sty/}{i18n.sty}
