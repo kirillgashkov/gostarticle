@@ -32,4 +32,8 @@
 
 % spacing
 
-\renewcommand\cftdotsep{1}
+% flush table of contents left
+\bgroup
+\advance\@flushglue by \@tocrmarg
+\xdef\@tocrmarg{\the\@flushglue}%
+\egroup
