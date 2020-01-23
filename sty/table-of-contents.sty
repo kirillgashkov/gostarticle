@@ -30,6 +30,10 @@
 % section line spacing
 \setlength{\cftbeforesecskip}{3pt}
 
+% for some reason, section does not have a dotfill by default, so, explicitly
+% add it here
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
 % spacing
 \renewcommand\cftdotsep{1}
 
