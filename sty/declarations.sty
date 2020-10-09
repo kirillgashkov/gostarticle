@@ -67,7 +67,9 @@
 	\hangafter=1
 }
 
-% https://tex.stackexchange.com/questions/2441/how-to-add-a-forced-line-break-inside-a-table-cell
+% adds a forced line break inside a table cell
+%
+% from: https://tex.stackexchange.com/q/2441
 \newcommand{\specialcell}[2][c]{
 	\begin{tabular}
 		[#1]{@{}c@{}}#2
