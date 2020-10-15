@@ -14,6 +14,9 @@
 % figure header
 \renewcommand{\figurename}{Рисунок}
 
+% list of figures header
+\renewcommand{\listfigurename}{\hfill ПЕРЕЧЕНЬ РИСУНКОВ \hfill}
+
 % counter
 \counterwithin{figure}{section}
 
@@ -29,12 +32,16 @@
 
 % ex­tra com­mands and be­hind-the-scenes op­ti­mi­za­tion
 \RequirePackage{booktabs}
+
 % write ta­bles that con­tinue to the next page
 \RequirePackage{longtable}
+
 % change cells style
 \RequirePackage{makecell}
+
 % extra column which width ex­pands to fill the declared en­vi­ron­ment
 \RequirePackage{tabularx}
+
 % add more text alignment commands
 \RequirePackage{ragged2e}
 
@@ -49,9 +56,15 @@
 
 % table header
 \renewcommand{\tablename}{Таблица}
+
+% list of tables header
+\renewcommand{\listtablename}{\hfill ПЕРЕЧЕНЬ ТАБЛИЦ \hfill}
+
 % counter
 \counterwithin{table}{section}
+
 % new column type
 \newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+
 % setup caption
 \captionsetup[table]{singlelinecheck=false}
