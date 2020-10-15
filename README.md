@@ -1,4 +1,4 @@
-# gostarticle
+# gostarticle is the awesome project
 
 A XeLaTeX documentclass that satisfies GOST requirements.
 
