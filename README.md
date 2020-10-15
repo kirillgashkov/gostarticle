@@ -16,22 +16,19 @@ A XeLaTeX documentclass that satisfies GOST requirements.
 ## Installation
 
 1. Add this repository as a submodule:
-
-```sh
-$ git submodule add git@github.com:kirillgashkov/gostarticle.git
-```
+	```sh
+	$ git submodule add git@github.com:kirillgashkov/gostarticle.git
+	```
 
 1. Add the repository path to the TeX search places:
-
-```sh
-$ export TEXINPUTS=.:./gostarticle:${TEXINPUTS}
-```
+	```sh
+	$ export TEXINPUTS=.:./gostarticle:${TEXINPUTS}
+	```
 
 1. Build the project with `gostarticle` (assuming, your main project is named `main.tex`):
-
-```sh
-$ latexmk -xelatex -bibtex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=.main main.tex
-```
+	```sh
+	$ latexmk -xelatex -bibtex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=.main main.tex
+	```
 
 ## Usage
 
