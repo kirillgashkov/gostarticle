@@ -22,7 +22,7 @@ A XeLaTeX documentclass that satisfies GOST requirements.
 
 1. Add the repository path to the TeX search places:
 	```sh
-	$ export TEXINPUTS=.:./gostarticle:${TEXINPUTS}
+	$ export TEXINPUTS=.:./gostarticle:
 	```
 
 1. Build the project with `gostarticle` (assuming, your main project is named `main.tex`):
