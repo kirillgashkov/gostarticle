@@ -35,6 +35,7 @@ A XeLaTeX documentclass that satisfies GOST requirements.
 ```tex
 \documentclass{gostarticle}
 
+\universitystatus{Статус университета}
 \university{Название университета}
 \doctype{Курсовой проект}
 \title{Название проекта}
