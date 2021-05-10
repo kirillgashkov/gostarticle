@@ -1,4 +1,4 @@
-\RequirePackage{xifthen}
+\RequirePackage{ifthen}
 
 \renewcommand*{\maketitle}{
 \makeatletter
@@ -34,7 +34,7 @@
 
 		\@subject
 
-		\ifthenelse{\isempty{\@variation}}
+		\ifthenelse{\equal{\@variation}{}}
 		{}
 		{\textbf{\@variation}}
 	\end{center}
@@ -44,7 +44,7 @@
 	\begin{flushright}
 		\textbf{Выполнил:}
 		
-		\ifthenelse{\isempty{\@authorgroup}}
+		\ifthenelse{\equal{\@authorgroup}{}}
 		{\@author}
 		{\@author,\\\@authorgroup}
 
@@ -52,7 +52,7 @@
 
 		\textbf{Проверил:}
 		
-		\ifthenelse{\isempty{\@supervisorposition}}
+		\ifthenelse{\equal{\@supervisorposition}{}}
 		{\@supervisor}
 		{\@supervisor,\\\@supervisorposition}
 	\end{flushright}
