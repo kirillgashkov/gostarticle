@@ -17,7 +17,9 @@
 
 		\bigskip
 
-		\@chair
+		\ifthenelse{\equal{\@chair}{}}
+		{}
+		{\@chair}
 	\end{center}
 
 	\vfill
@@ -29,9 +31,13 @@
 
 		\@title
 
-		\textbf{по дисциплине}
-
-		\@subject
+		\ifthenelse{\equal{\@subject}{}}
+		{}
+		{
+			\textbf{по дисциплине}
+			
+			\@subject
+		}
 
 		\ifthenelse{\equal{\@variation}{}}
 		{}
@@ -49,11 +55,15 @@
 
 		\bigskip
 
-		\textbf{Проверил:}
+		\ifthenelse{\equal{\@supervisor}{}}
+		{}
+		{
+			\textbf{Проверил:}
 		
-		\ifthenelse{\equal{\@supervisorposition}{}}
-		{\@supervisor}
-		{\@supervisor,\\\@supervisorposition}
+			\ifthenelse{\equal{\@supervisorposition}{}}
+			{\@supervisor}
+			{\@supervisor,\\\@supervisorposition}
+		}
 	\end{flushright}
 
 	\vfill
